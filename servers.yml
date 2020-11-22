@@ -1,0 +1,118 @@
+---
+admin_client:
+  - 192.168.84.1
+android_emulator:
+  - 192.168.71.42
+  - 192.168.71.43
+ansible:
+  - 192.168.80.1
+cassandra:
+  - 192.168.83.1
+  - 192.168.83.2
+  - 192.168.83.3
+  - 192.168.83.4
+cluster: []
+collection_client:
+  - 192.168.81.5
+collector_topology:
+  - 192.168.82.1
+common: []
+configuration_service:
+  - 192.168.80.2
+discovery_service:
+  - 192.168.80.2
+emulator_collector_server:
+  - 192.168.71.108
+emulator_collector_worker:
+  - 192.168.71.107
+expansion_client:
+  - 192.168.81.3
+flow_manager:
+  - 192.168.82.1
+jback:
+  - 192.168.84.1
+jclient:
+  - 192.168.84.1
+jdown:
+  - 192.168.82.1
+jenkins:
+  - 192.168.80.1
+jet_service:
+  - 192.168.71.109
+  - 192.168.71.110
+jfile:
+  - 192.168.81.1
+jgate:
+  - 192.168.82.1
+jhtop:
+  - 192.168.81.1
+jlimiter:
+  - 192.168.82.1
+jscheduler:
+  - 192.168.81.2
+jtool:
+  - 192.168.83.1
+mariadb:
+  - 192.168.83.4
+mnw2vec:
+  - 192.168.81.4
+mongodb:
+  - 192.168.83.1
+  - 192.168.83.2
+  - 192.168.83.3
+msearch_solr:
+  - 192.168.81.4
+mstory:
+  - 192.168.81.4
+payment_service:
+  - 192.168.81.2
+policy_management:
+  - 192.168.81.2
+postgres:
+  - 192.168.83.4
+puppet_master:
+  - 192.168.81.3
+puppet_worker:
+  - 192.168.82.3
+query_director:
+  - 192.168.81.2
+query_manager:
+  - 192.168.81.2
+queue_dispatcher:
+  - 192.168.82.1
+rabbitmq:
+  - 192.168.82.1
+redis:
+  - 192.168.83.4
+report_service:
+  - 192.168.81.3
+secure: []
+sensu_master:
+  - 192.168.80.1
+social_data_service:
+  - 192.168.81.5
+solr:
+  - 192.168.83.8
+  - 192.168.83.9
+  - 192.168.83.10
+  - 192.168.83.11
+squid:
+  - 192.168.80.1
+storm_nimbus:
+  - 192.168.82.1
+storm_supervisor:
+  - 192.168.82.2
+telegram_service:
+  - 192.168.82.3
+topic_collector:
+  - 192.168.81.3
+topic_service:
+  - 192.168.81.3
+unity_service:
+  - 192.168.71.106
+users_management:
+  - 192.168.81.2
+zookeeper:
+  - 192.168.83.5
+  - 192.168.83.6
+  - 192.168.83.7

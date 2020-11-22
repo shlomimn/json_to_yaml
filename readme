@@ -1,0 +1,1 @@
+python2  json_to_inv.py --input-json /tmp/<result-into-file>  --alias <va-alias> --env onprem

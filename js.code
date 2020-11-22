@@ -1,0 +1,7 @@
+Script -> Firefox browser -> URL for Bookmark (table-2-json) 
+# ip-address is the key
+ 
+
+javascript: (async () => {   let parentType = (element,type) => {     if (element.nodeName.toLowerCase() == type.toLowerCase()) {       return element;     } else if (element.parentElement != null) {       return parentType(element.parentElement,type);     } else {       return false;     }   };   let clickInput = (type) => {     return new Promise((resolve,reject) =>  {       document.addEventListener("click", (e) => {         e = parentType(e.target,type);         if (e) {           resolve(e);         }       });     });   };   let getValue = (cell) => {     let value = "";     if (cell.innerText == "") {       if (cell.querySelector("img") !== null) {         value = cell.querySelector("img").getAttribute("alt");       }     } else {       value = cell.innerText;     }     return value;   };   alert("click a table");   let table = await clickInput("table");   let tableHead = table.querySelector("tr");   let attributes = [];   let output = [];   [...tableHead.children].map((e,i) => {     attributes[i] = getValue(e);   });   [...table.querySelectorAll("tr")].slice(1).map(row => {     let rowValues = {};     [...row.children].map((e,i) => {       rowValues[attributes[i].trim().toLowerCase()] = getValue(e).toLowerCase();     });     output.push(rowValues);   });   alert(JSON.stringify(output)) })(); 
+
+ 
